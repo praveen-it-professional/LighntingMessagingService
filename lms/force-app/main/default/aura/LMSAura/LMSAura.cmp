@@ -1,0 +1,23 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="message" type="String"/>
+    <aura:attribute name="messageRecived" type="String"/>
+<lightning:messageChannel
+ type="SampleMessageChannel__c"
+ aura:id="smc"
+ onMessage="{!c.handleMessage}"
+ scope="APPLICATION"
+></lightning:messageChannel>
+<lightning:card title="LMS Aura Component">
+    <strong>Publish Message From Aura</strong>
+    <lightning:input
+      type="text"
+      id="messageinput"
+      value="{!v.message}"
+      onkeyup="{!c.inptputHandler}"
+    ></lightning:input>
+
+    <lightning:button label="Publish" onclick="{!c.publishMessage}"></lightning:button>
+
+    <div class="slds-p-around_medium"> Message Recieved is {!v.messageRecived}</div>
+</lightning:card>
+</aura:component>	
