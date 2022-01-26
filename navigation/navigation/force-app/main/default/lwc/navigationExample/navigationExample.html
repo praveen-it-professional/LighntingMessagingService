@@ -1,0 +1,49 @@
+<template>
+  <lightning-card title="Navigation Demo">
+    Current Page Ref - {currentPageRef}<br/>
+    <lightning-button label="Navigate To Home" variant="brand" 
+     onclick={handleNavigation}
+    ></lightning-button>
+<br/>
+    <lightning-button label="Navigate To Chatter" variant="brand" 
+     onclick={navigateToChatter}
+   ></lightning-button>
+    <br/>
+    <lightning-button label="Navigate To New Contact" variant="brand" 
+     onclick={navigateToNewContact}
+   ></lightning-button>
+    <br/>
+    <lightning-button label="Navigate To LWC" variant="brand" 
+    onclick={navigateToLWC}
+  ></lightning-button>
+   <br/>
+   <lightning-button label="Navigate To Aura" variant="brand" 
+   onclick={navigateToAura}
+ ></lightning-button>
+  <br/>
+  <lightning-button label="Navigate To List View" variant="brand" 
+  onclick={navigateToListView}
+></lightning-button>
+ <br/>
+ <lightning-button label="Navigate To File (Content Doc)" variant="brand" 
+ onclick={navigateToFile}
+></lightning-button>
+<br/>
+<lightning-button label="Navigate To Web Page" variant="brand" 
+onclick={navigateTowebPage}
+></lightning-button>
+<br/>
+<lightning-button label="Navigate To VF" variant="brand" 
+onclick={navigateToVFPage}
+></lightning-button>
+<br/>
+<lightning-button label="Navigate To Related list" variant="brand" 
+onclick={navigateToRelatedList}
+></lightning-button>
+<br/>
+<lightning-button label="Navigate To Tab" variant="brand" 
+onclick={navigateToTab}
+></lightning-button>
+<br/>
+</lightning-card>
+</template>
